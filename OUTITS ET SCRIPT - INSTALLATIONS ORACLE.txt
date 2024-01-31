@@ -1,0 +1,99 @@
+
++++++++++++++++ OUTILS ORACLE
+
+++++++++++ Oracle Database Free | Oracle Database 21c XE
+
+Base de données Oracle Database gratuite pour tous.
+Que vous soyez un développeur, un DBA, un data scientist, un éducateur ou simplement curieux des bases de données, Oracle Database Express Edition (XE) est le moyen idéal gratuit.
+
+Lien de téléchargement : https://www.oracle.com/fr/database/technologies/xe-downloads.html
+
+++++++++++ SQL Developer
+Oracle SQL Developer est un environnement de développement gratuit et intégré qui facilite le développement et la gestion d'Oracle Database à la fois dans les déploiements cloud et traditionnels. 
+
+SQL Developer 23.1.1
+Lien de téléchargement : https://www.oracle.com/database/sqldeveloper/technologies/download/
+
+
+++++++++++ SQL Developer Data Modeler 23.1 | Modélisation de données avec Oracle SQL Developer 
+
+Oracle SQL Developer Data Modeler est un outil graphique gratuit qui améliore la productivité et simplifie les tâches de modélisation des données.
+
+Lien de téléchargement : https://www.oracle.com/database/sqldeveloper/technologies/sql-data-modeler/download/
+
+**********
+++++++++++ Installation hr | SQL*Plus | Oracle Database 21c Express Edition (XE)
+
+-- Documentations : 
+
+https://docs.oracle.com/en/database/oracle/oracle-database/23/comsc/installing-sample-schemas.html#GUID-1E645D09-F91F-4BA6-A286-57C5EC66321D 
+
+https://github.com/oracle-samples/db-sample-schemas/releases/tag/v23.2
+
+https://www.oracle.com/fr/database/technologies/odac-downloads.html
+
+-- Lancer SQL*Plus
+
+Entrez le nom utilisateur : / as sysdba
+
+show pdbs
+
+connect sys/emefa@//localhost:1521/XEPDB1 as sysdba
+-- ou connect sys/emefa@//IP:1521/XEPDB1 as sysdba
+
+@?/demo/schema/db/human_resources/hr_install.sql  
+
+hr | users | yes
+
+-- Lancer à nouveau SQL*Plus
+
+@?/demo/schema/db/human_resources/hr_create.sql
+@?/demo/schema/db/human_resources/hr_populate.sql
+@?/demo/schema/db/human_resources/hr_code.sql
+
+
+-- Désinstallation
+
+@?/demo/schema/db/human_resources/hr_uninstall.sql
+
+-- Connexionn à la base de données hr via SQL Developer Tool
+-- Créer le schéma de base données hr sur SQL Developer Tool
+nom d'utilisateur : hr
+mot de passe : hr
+role : par défaut
+enregistrer le mot de passe
+nom de service : XEPDB1
+
+*****
++++++ Installation co | SQL*Plus | Oracle Database 21c Express Edition (XE)
+
+-- Lancer SQL*Plus
+
+Entrez le nom utilisateur : / as sysdba
+
+show pdbs
+
+connect sys/emefa@//localhost:1521/XEPDB1 as sysdba
+-- Ou connect sys/emefa@//IP:1521/XEPDB1 as sysdba
+
+@?/demo/schema/db/customer_orders/co_install.sql  
+
+co | users | yes
+
+-- Lancer à nouveau SQL*Plus 
+
+@?/demo/schema/db/customer_orders/co_create.sql
+@?/demo/schema/db/customer_orders/co_populate.sql
+
+
+-- Désinstallation
+
+@?/demo/schema/db/customer_orders/co_uninstall.sql
+
+-- Créer et (se connecter) le schéma de base données CO sur SQL Developer Tool
+
+nom d'utilisateur : co
+mot de passe : co
+role : par défaut
+enregistrer le mot de passe
+nom de service : XEPDB1
