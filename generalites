@@ -1,0 +1,168 @@
+# A. Introduction et fondements
+
+## Introduction
+
+### Rappel ###
+
+* **Données** : sont des **informations brutes** qui peuvent être utilisées pour prendre des décisions ou résoudre des problèmes. Elles peuvent être de natures diverses, telles que des **chiffres, des textes, des images ou des vidéos.**
+
+* **Base de données** : est un **ensemble de données** organisé de manière à faciliter leur accès , leur gestion et leur utilisation. Elle est constituée d'un ensemble de tables, qui sont des structures de données qui contiennent des données d'un type particulier. Les tables sont reliées entre elles par des relations, qui définissent les liens entre les données de différentes tables.
+
+* **SGBD** : un système de gestion de base de données (SGBD) est un **logiciel** qui permet de créer, de gérer et d'utiliser une base de données. Il fournit une **interface** aux utilisateurs et aux applications, permettant de **manipuler les données** de la base. 
+
+* **Un entrepôt de données** est une base de données centralisée qui est utilisée pour stocker et analyser des données provenant de différentes sources. Il est conçu pour répondre aux besoins des décideurs et des analystes, qui ont besoin d'accéder à des données historiques et à grande échelle pour prendre des décisions éclairées. **L’entrepôt de données est au cœur de l’informatique décisionnelle.**
+*Exemple : Entrepôt de données de santé, d'éducation...*
+
+**Les entrepôts de données sont composés de trois couches principales :**
+
+1. La **couche de stockage** : Cette couche est responsable du stockage des données. Elle est généralement composée d'un système de stockage de données relationnel, tel que Oracle ou Microsoft SQL Server.
+2. La **couche de modélisation** : Cette couche est responsable de la modélisation des données. Elle définit la structure des données et les relations entre les données.
+3. La **couche d'accès** : Cette couche est responsable de l'accès aux données. Elle fournit une interface aux utilisateurs et aux applications pour accéder aux données.
+
+**Les avantages des entrepôts de données :**
+
+* La possibilité d'accéder à des données historiques et à grande échelle
+* L'efficacité des requêtes complexes
+* La flexibilité du modèle de données relationnel
+
+**Les inconvénients des entrepôts de données :**
+
+* Les coûts de mise en œuvre et de maintenance
+* La complexité de la conception et de la gestion
+
+**Question : Quelles sont les différences entre Entrepôt de données et Base de données ?**
+
+### Les bases de données avancées ###
+
+**Les bases de données avancées** sont une extension des bases de données traditionnelles. Elles offrent des fonctionnalités supplémentaires pour gérer des données plus complexes et volumineuses.
+
+Les bases de données avancées sont utilisées dans une variété d'applications, notamment :
+
+- La Science des Données 
+- L'apprentissage automatique
+- La gestion de la chaîne d'approvisionnement
+- Le commerce électronique 
+- Les systèmes de géolocalisation
+
+
+## Fondements
+
+Les bases de données avancées reposent sur les mêmes principes fondamentaux que les bases de données traditionnelles. 
+Cependant, elles ajoutent des fonctionnalités supplémentaires pour gérer les données complexes et volumineuses.
+
+### Fonctionnalités ###
+**On peut noter :**
+
+- **La modélisation des données** : la modélisation des données est le processus de conception d'une base de données. Les bases de données avancées offrent des fonctionnalités supplémentaires pour modéliser des données complexes, telles que les données hiérarchiques, les données réseau et les données multidimensionnelles.
+
+- **L'indexation** : l'indexation est le processus de création d'une structure de données qui permet de rechercher rapidement les données dans une base de données. Les bases de données avancées offrent des fonctionnalités supplémentaires pour l'indexation, telles que l'indexation par plage et l'indexation par géolocalisation.
+
+- **La distribution** : la distribution est le processus de partitionnement d'une base de données sur plusieurs serveurs. Les bases de données avancées offrent des fonctionnalités supplémentaires pour la distribution, telles que la réplication et la répartition de charge.
+
+- **La sécurité** : la sécurité est la protection des données contre les accès non autorisés. Les bases de données avancées offrent des fonctionnalités supplémentaires pour la sécurité, telles que l'authentification et l'autorisation.
+Types de bases de données avancées.
+
+* **Des performances améliorées** : les bases de données avancées peuvent être optimisées pour traiter des requêtes complexes et des volumes de données importants.
+
+* **Une meilleure scalabilité** : les bases de données avancées peuvent être facilement mises à l'échelle pour s'adapter à l'augmentation des besoins en données.
+
+* **Une plus grande flexibilité** : les bases de données avancées offrent un plus grand choix de modèles de données, ce qui permet de mieux adapter la base de données aux besoins de l'application.
+
+### Types de bases de données avancées ###
+
+**Il existe plusieurs types de bases de données avancées, chacun avec ses propres avantages et inconvénients.**
+
+- **Les bases de données relationnelles** : sont le type de base de données le plus courant. Elles sont basées sur le modèle relationnel, qui est un modèle de données qui organise les données dans des tables. Les bases de données relationnelles sont bien adaptées aux applications qui nécessitent de manipuler des données structurées.Les bases de données relationnelles sont très structurées et incluent un langage de programmation appelé langage SQL (SQL).
+
+- **Les bases de données NoSQL** : sont un type de base de données qui n'est pas basé sur le modèle relationnel. Elles sont conçues pour gérer des données non structurées ou semi-structurées. Les bases de données NoSQL sont bien adaptées aux applications qui nécessitent de manipuler des données volumineuses ou hétérogènes.
+Les bases de données non relationnelles sont très diversifiées et prennent en charge une grande variété de structures de données. Étant donné que de nombreuses bases de données non relationnelles n’utilisent pas SQL, elles sont souvent appelées bases de données NoSQL.
+
+- **Les bases de données orientées objet** : sont un type de base de données qui est basé sur le modèle objet. Elles organisent les données dans des objets, qui sont des structures de données qui regroupent des données et des méthodes. Les bases de données orientées objet sont bien adaptées aux applications qui nécessitent de manipuler des données complexes.
+
+### Types de données de chaîne ###
+
+Les types de données de chaîne sont généralement un ensemble de caractères appartenant à l'alphabet anglais. Les principaux types de données de chaîne sont :
+
+* CHAR(taille)
+* VARCHAR(taille)
+* BINAIRE(taille)
+* VARBINAIRE(taille)
+* TINYBLOB
+* TINYTEXTE
+* Taille du texte)
+* BLOB(taille)
+* TEXTE MOYEN
+* MEDIUMBLOB
+* TEXTE LONG
+* LONGBLOB
+* ENUM(val_1, val_2, val_3, ...)
+* ENSEMBLE(val_1, val_2, val_3, ...)
+
+La TAILLE représente la taille maximale que les données stockées peuvent prendre. Un CHAR est une chaîne de longueur fixe, tandis qu'un VARCHAR est une chaîne de longueur variable. Ce sont les types de données de chaîne les plus utilisés. Un BLOB est un grand objet binaire.
+
+### Types de données numériques ###
+
+Les variables de type de données numériques sont utilisées pour contenir des données numériques. Ils sont ensuite divisés en deux types de types de données - exact et approximatif. Les types de données exacts sont utilisés pour conserver la valeur de données sous sa forme littérale. 
+
+Alors que les nombres réels sont contenus dans des types de données approximatifs, les informations ne sont pas littéralement enregistrées en tant que copie des valeurs réelles. Les principaux types de données numériques sont :
+
+* BIT(taille)\
+* TINYINT(taille)
+* BOOL
+* BOOLÉEN
+* PETITINT(taille)
+* MENTHE MOYENNE(taille)
+* INT(taille)
+* ENTIER(taille)
+* BIGINT(taille)
+* FLOTTEUR(taille, d)
+* FLOTTANT(p)
+* DOUBLE(taille, d)
+* DOUBLE PRÉCISION (taille, d)
+* DÉCIMAL(taille, d)
+* DEC(taille, d)
+
+Le type de données numériques le plus couramment utilisé est INT . Il est utilisé pour contenir des nombres non décimaux, tandis que les variables avec des types de données FLOAT sont utilisées pour contenir des nombres décimaux. Dans le type de données BOOL , zéro est considéré comme FALSE et les valeurs non nulles sont considérées comme TRUE .
+
+### Date et l'heure ###
+
+Les types de données de date et d'heure sont utilisés pour contenir les données de date. Les principaux types de données de date et d'heure sont :
+
+* DATE
+* DATEHEURE(fsp)
+* Horodatage(fsp)
+* TEMPS(fsp)
+* AN
+
+## Pertinence ##
+**Les bases de données avancées offrent des fonctionnalités supplémentaires pour gérer des données complexes et volumineuses.**
+
+## Exemples ##
+
+Les bases de données avancées sont utilisées pour stocker des **données** de différentes natures, notamment :
+
+* **Des données structurées**, qui sont des données qui peuvent être organisées dans un tableau ou une autre structure de données bien définie. 
+Par exemple, les données de clients d'une entreprise peuvent être structurées dans une table avec les colonnes suivantes :
+IDClient, Nom, Prenom, Phone, Email, Quartier
+
+| IDclient|	Nom	    | Prenom	 | Phone	      | Email	                      | Quartier  |
+|:------- |:--------|:---------|:-------------|:----------------------------|:----------|
+| D2021	  | Lawson	| Marceline| 22890233214  | lawson.marceline@gmail.com  | Agoe      |
+| D2022	  | Park	  | Sin	     | 22890142332  | park.sin@gsiil.com	        | Baguida   |
+| D2023	  | Keita	  | Ismael   | 22899322314  | keita.ismael@gisil.com	    | Adidogome |
+| D2024	  | Koffi	  | Abla	   | 22892321432  | koffi.abla@gabil.com		    | Adewui    |
+| D2025	  | Jos	    | David	   | 22897142332  | josdavid@gdail.com		      | Lomnava   |
+| D2026	  | Esso	  | Nahomie  | 22870231432  | esso.nahomie@gnail.com	    | Agoe      |
+| D2027	  | Aurel   | Marc	   | 22891322314  | aurelmarc@gmail.com 		    | Atikoume  |
+
+* **Des données non structurées**, qui sont des données qui ne peuvent pas être facilement organisées dans un tableau ou une autre structure de données bien définie. 
+Par exemple, les données de journal (historiques) d'un site web peuvent être non structurées, car elles peuvent contenir des informations de différentes sources, telles que des cookies, des adresses IP et des journaux d'erreurs.
+
+* **Des données géospatiales**, qui sont des données qui représentent des objets ou des phénomènes sur une carte. 
+Par exemple, les données de trafic routier peuvent être géospatiales, car elles représentent la position des véhicules sur un réseau routier.
+
+* En **Commerce Electronique**, les bases de données avancées peuvent être utilisées pour stocker les données des produits, des clients, des commandes et des transactions.
+
+* En **Analyse de Données**, les bases de données avancées peuvent être utilisées pour stocker et manipuler des données de capteurs, des transactions financières, des médias sociaux et d'autres sources.
+
+* En **Apprentissage Automatique**, les bases de données avancées peuvent être utilisées pour stocker des données d'entraînement et de test pour les modèles d'apprentissage automatique.
